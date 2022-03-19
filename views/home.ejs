@@ -3,6 +3,19 @@
     <title>[wesker]</title>
     <link rel="stylesheet" href="home.css"/>
     <meta name="viewport" content="width=device-width, intitial-scale=1">
+    <meta property="og:video" content="<%= video %>" />
+    <meta property="og:video:secure_url" content="<%= video %>">
+    <meta property="og:video:width" content="896" />
+    <meta property="og:video:height" content="504" />
+    <meta property="og:video:type" content="video/mp4" />
+    <meta property="og:type" content="video.other">
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:player" content="<%= video %>" />
+    <meta name="twitter:player:width" content="896" />
+    <meta name="twitter:player:height" content="504" />
+    <meta name="twitter:player:stream" content="<%= video %>" />
+    <meta name="twitter:player:stream:content_type" content="video/mp4" />
+    <meta property="title" content="[wesker]">
   </head>
   <body>
     <div class="ph-card"> <!--PH TITLE-->
@@ -16,7 +29,7 @@
     <br/><br/>
     <div class="card">
       <video class="card" controls>
-        <source src="https://cdn.discordapp.com/attachments/425899424607371275/830119449276973066/video0-25.mov" type="video/mp4">
+        <source src="<%= video %>" type="video/mp4">
       </video>
     </div>
   <body>
